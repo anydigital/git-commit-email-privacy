@@ -24,11 +24,13 @@
 # --------------------------------------------------------------------
 
 # --- GitHub ---
+# https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-on-github
 [includeIf "hasconfig:remote.*.url:**/*github.com/**"]
     [user]
         email = YOUR_GITHUB_ID+USERNAME@users.noreply.github.com
 
 # --- GitLab ---
+# https://docs.gitlab.com/user/profile/#use-an-automatically-generated-private-commit-email
 [includeIf "hasconfig:remote.*.url:**/*gitlab.com/**"]
     [user]
         email = YOUR_GITLAB_ID-USERNAME@users.noreply.gitlab.com
