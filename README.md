@@ -46,6 +46,6 @@ Shouldn't this be the default configuration for every developer?
 
 # Links
 
-https://www.reddit.com/r/git/comments/1pf94nt/how_to_avoid_exposing_your_commit_email_private/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+https://www.reddit.com/r/git/comments/1pf94nt/how_to_avoid_exposing_your_commit_email_private/
 
-https://www.reddit.com/r/gitlab/comments/1pedw0w/setandforget_git_privacy_in_5_minutes_autoswitch/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+https://www.reddit.com/r/gitlab/comments/1pedw0w/setandforget_git_privacy_in_5_minutes_autoswitch/
