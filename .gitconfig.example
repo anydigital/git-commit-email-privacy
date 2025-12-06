@@ -1,0 +1,34 @@
+# ====================================================================
+# Global Git Configuration (Usually ~/.gitconfig)
+#
+# To use this example:
+# 1. Save this file as ~/.gitconfig
+# 2. Replace all PLACE_HOLDER values (e.g., YOUR_FULL_NAME)
+# ====================================================================
+
+# --------------------------------------------------------------------
+# BASE CONFIGURATION
+# --------------------------------------------------------------------
+[user]
+    # Set your default full name for all commits.
+    name = YOUR_FULL_NAME
+
+    # CRITICAL: Prevents accidental system email exposure if no
+    # specific email is found in the conditional blocks below.
+    useconfigonly = true
+
+# --------------------------------------------------------------------
+# CONDITIONAL OVERRIDES
+# These allow you to use different `user.email` based on the URL of
+# the repository (e.g., work vs. personal, or GitHub vs. GitLab, etc.)
+# --------------------------------------------------------------------
+
+# --- GitHub ---
+[includeIf "hasconfig:remote.*.url:**/*github.com/**"]
+    [user]
+        email = YOUR_GITHUB_ID+USERNAME@users.noreply.github.com
+
+# --- GitLab ---
+[includeIf "hasconfig:remote.*.url:**/*gitlab.com/**"]
+    [user]
+        email = YOUR_GITLAB_ID-USERNAME@users.noreply.gitlab.com
