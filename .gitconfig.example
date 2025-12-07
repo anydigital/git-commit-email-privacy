@@ -11,7 +11,7 @@
     # Set your default name for all commits.
     name = YOUR_FULL_NAME
 
-    # CRITICAL: Prevents accidental system email exposure if no
+    # CRITICAL: Prevents accidental exposure of system email if no
     # specific email is found in the conditional blocks below.
     useconfigonly = true
 
