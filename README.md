@@ -10,30 +10,73 @@ But there's a set-and-forget solution to ensure your Git privacy.
 2. **Privacy Guardrail.** Set `useconfigonly = true` in your Git configuration to prevent falling back to your system username/hostname (e.g., `user@laptop.local`). If no email is set in the config, the commit will simply fail, prompting you to fix it.
 3. **Automatic Switching.** Use the conditional `[includeIf]` block with `**/*hostname.com/**` as a powerful glob pattern to match both HTTPS (`https://`) and SSH (`git@`) remote URLs for the respective hosts. This forces Git to use the correct no-reply email based purely on the repository's remote URL.
 
-# Final Config
+# Final Config Files
 
-Copy and paste this content into your single global Git configuration file `~/.gitconfig`, **and don't forget replacing the PLACE\_HOLDERS:**
+You'll need the following configuration files. Replace all `PLACE_HOLDER` values with your actual information.
 
-    # =====================================================================
-    # Global Git Config
-    # =====================================================================
-    [user]
-        name = YOUR_FULL_NAME
-        
-        # CRITICAL: Prevents accidental system email exposure if no
-        # specific email is found in the conditional blocks below.
-        useconfigonly = true
-    
-    # =====================================================================
-    # Conditional Emails
-    # =====================================================================
-    [includeIf "hasconfig:remote.*.url:**/*github.com/**"]
-        [user]
-            email = YOUR_GITHUB_ID+USERNAME@users.noreply.github.com
-    # =====================================================================
-    [includeIf "hasconfig:remote.*.url:**/*gitlab.com/**"]
-        [user]
-            email = YOUR_GITLAB_ID-USERNAME@users.noreply.gitlab.com
+## `.gitconfig` (Global Git Configuration)
+
+```ini
+# ====================================================================
+# Global Git Configuration (Usually ~/.gitconfig)
+#
+# To use this example:
+# 1. Save this file as ~/.gitconfig
+# 2. Replace all PLACE_HOLDER values (e.g., YOUR_FULL_NAME)
+# 3. Repeat for .gitconfig-github and .gitconfig-gitlab as necessary
+# ====================================================================
+
+[user]
+    # Set your default name for all commits.
+    name = YOUR_FULL_NAME
+
+    # CRITICAL: Prevents accidental exposure of system email if no
+    # specific email is found in the conditional blocks below.
+    useconfigonly = true
+
+# --------------------------------------------------------------------
+# CONDITIONAL OVERRIDES
+# These allow you to use different `user.email` based on the URL of
+# the remote repository.
+# ====================================================================
+[includeIf "hasconfig:remote.*.url:**/*github.com/**"]
+    path = .gitconfig-github
+
+[includeIf "hasconfig:remote.*.url:**/*gitlab.com/**"]
+    path = .gitconfig-gitlab
+```
+
+## `.gitconfig-github` (GitHub-Specific Configuration)
+
+```ini
+# ====================================================================
+# GitHub-specific Git configuration
+#
+# To use this example:
+# 1. Get your unique GitHub commit email: 
+#    https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address
+# 2. Copy this file next to your `~/.gitconfig` and replace email below
+# ====================================================================
+
+[user]
+    email = YOUR_GITHUB_ID+USERNAME@users.noreply.github.com
+```
+
+## `.gitconfig-gitlab` (GitLab-Specific Configuration)
+
+```ini
+# ====================================================================
+# GitLab-specific Git configuration
+#
+# To use this example:
+# 1. Get your unique GitLab commit email: 
+#    https://docs.gitlab.com/user/profile/#use-an-automatically-generated-private-commit-email
+# 2. Copy this file next to your `~/.gitconfig` and replace email below
+# ====================================================================
+
+[user]
+    email = YOUR_GITLAB_ID-USERNAME@users.noreply.gitlab.com
+```
 
 # How to Verify
 
