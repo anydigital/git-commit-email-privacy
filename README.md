@@ -49,3 +49,7 @@ Shouldn't this be the default configuration for every developer?
 https://www.reddit.com/r/git/comments/1pf94nt/how_to_avoid_exposing_your_commit_email_private/
 
 https://www.reddit.com/r/gitlab/comments/1pedw0w/setandforget_git_privacy_in_5_minutes_autoswitch/
+
+# Credits
+
+https://stackoverflow.com/a/74012889/5034198
