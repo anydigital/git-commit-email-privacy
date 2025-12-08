@@ -1,3 +1,7 @@
+<!-- _**UPD:** The most up-to-date config version is now here: https://github.com/anton-staroverov/git-commit-email-privacy_ -->
+
+---
+
 Exposing your commit email is easy; rewriting Git history is hard.
 
 But there's a set-and-forget solution to ensure your Git privacy.
@@ -114,4 +118,4 @@ https://stackoverflow.com/a/74012889/5034198
 
 _**UPD:** Had to split the `.gitconfig` into multiple files to avoid issues with `[includeIf]`, as explained in https://stackoverflow.com/a/74012889/5034198_
 
-_**UPD#2:** The most up-to-date config version is now here: https://github.com/anton-staroverov/git-commit-email-privacy_
+_**UPD:** The most up-to-date config version is now here: https://github.com/anton-staroverov/git-commit-email-privacy_
