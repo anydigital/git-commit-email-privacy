@@ -34,7 +34,7 @@ You'll need the following configuration files. Replace all `PLACE_HOLDER` values
 
     # CRITICAL: Prevents accidental exposure of system email if no
     # specific email is found in the conditional blocks below.
-    useconfigonly = true
+    useConfigOnly = true
 
 # --------------------------------------------------------------------
 # CONDITIONAL OVERRIDES
