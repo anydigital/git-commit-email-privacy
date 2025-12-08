@@ -11,8 +11,8 @@ But there's a set-and-forget solution to ensure your Git privacy.
 ## The Core Principles
 
 1. **Private Commit Emails.** Never commit with your personal or work email again! Both GitHub and GitLab provide automatic, unique no-reply commit email addresses that hide your identity while still correctly attributing contributions to your profile:
-   * https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address
-   * https://docs.gitlab.com/user/profile/#use-an-automatically-generated-private-commit-email
+   * https://github.com/settings/emails#toggle_visibility_label ([docs](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address))
+   * https://gitlab.com/-/user_settings/profile#user_public_email ([docs](https://docs.gitlab.com/user/profile/#use-an-automatically-generated-private-commit-email))
 2. **Privacy Guardrail.** Set `useConfigOnly = true` in your Git configuration to prevent falling back to your system username/hostname (e.g., `user@laptop.local`). If no email is set in the config, the commit will simply fail, prompting you to fix it.
 3. **Automatic Switching.** Use the conditional `[includeIf]` block with `**/*hostname.com/**` as a powerful glob pattern to match both HTTPS (`https://`) and SSH (`git@`) remote URLs for the respective hosts. This forces Git to use the correct no-reply email based purely on the repository's remote URL.
 
