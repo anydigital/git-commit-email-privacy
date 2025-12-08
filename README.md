@@ -14,6 +14,8 @@ But there's a set-and-forget solution to ensure your Git privacy.
 
 You'll need the following configuration files. Replace all `PLACE_HOLDER` values with your actual information.
 
+<!-- _The most up-to-date config version is now here: https://github.com/anton-staroverov/git-commit-email-privacy_ -->
+
 ## `.gitconfig` (Global Git Configuration)
 
 <!-- GITCONFIG_EXAMPLE_START -->
