@@ -24,9 +24,7 @@ You'll need the following configuration files. Replace all `PLACE_HOLDER` values
 
 ### `.gitconfig` (Global Git Configuration)
 
-<!-- GITCONFIG_EXAMPLE_START -->
-
-```ini
+```ini:.gitconfig.example
 # ====================================================================
 # Global Git Configuration
 #
@@ -56,8 +54,6 @@ You'll need the following configuration files. Replace all `PLACE_HOLDER` values
 [includeIf "hasconfig:remote.*.url:**/*gitlab.com/**"]
     path = .gitconfig-gitlab
 ```
-
-<!-- GITCONFIG_EXAMPLE_END -->
 
 ### `.gitconfig-github` (GitHub-Specific Configuration)
 
