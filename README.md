@@ -22,7 +22,7 @@ You'll need the following configuration files. Replace all `PLACE_HOLDER` values
 
 <!-- _The most up-to-date config version is now here: https://github.com/anydigital/git-commit-email-privacy_ -->
 
-### `.gitconfig` (Global Git Configuration)
+### `.gitconfig`
 
 ```ini:.gitconfig.example
 # ====================================================================
@@ -56,11 +56,9 @@ You'll need the following configuration files. Replace all `PLACE_HOLDER` values
 
 ```
 
-### `.gitconfig-github` (GitHub-Specific Configuration)
+### `.gitconfig-github`
 
-<!-- GITCONFIG_GITHUB_START -->
-
-```ini
+```ini:.gitconfig-github
 # ====================================================================
 # GitHub-specific Git configuration
 #
@@ -73,13 +71,9 @@ You'll need the following configuration files. Replace all `PLACE_HOLDER` values
     email = YOUR_GITHUB_ID+USERNAME@users.noreply.github.com
 ```
 
-<!-- GITCONFIG_GITHUB_END -->
+### `.gitconfig-gitlab`
 
-### `.gitconfig-gitlab` (GitLab-Specific Configuration)
-
-<!-- GITCONFIG_GITLAB_START -->
-
-```ini
+```ini:.gitconfig-gitlab
 # ====================================================================
 # GitLab-specific Git configuration
 #
@@ -91,8 +85,6 @@ You'll need the following configuration files. Replace all `PLACE_HOLDER` values
 [user]
     email = YOUR_GITLAB_ID-USERNAME@users.noreply.gitlab.com
 ```
-
-<!-- GITCONFIG_GITLAB_END -->
 
 ## How to Verify
 
