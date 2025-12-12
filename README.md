@@ -1,6 +1,6 @@
 # Git Commit Email Privacy in 5 Minutes:<br> <sub>automatic no-reply email, `useConfigOnly`, and conditional `includeIf`</sub>
 
-<!--@reddit: _**UPD:** The most up-to-date config version is now here: https://github.com/anydigital/git-commit-email-privacy_ -->
+<!--@r: _**UPD:** The most up-to-date config version is now here: https://github.com/anydigital/git-commit-email-privacy_ -->
 
 Exposing your commit email is easy; rewriting Git history is hard.
 
@@ -20,7 +20,7 @@ You'll need the following configuration files. Replace all `PLACE_HOLDER` values
 
 _**NOTE:** You have to split the `.gitconfig` into multiple files to avoid issues with `[includeIf]`, as explained in https://stackoverflow.com/a/74012889/5034198_
 
-<!--@reddit: _The most up-to-date config version is now here: https://github.com/anydigital/git-commit-email-privacy_ -->
+<!--@r: _The most up-to-date config version is now here: https://github.com/anydigital/git-commit-email-privacy_ -->
 
 ### `.gitconfig`
 
