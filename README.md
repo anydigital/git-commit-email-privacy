@@ -1,8 +1,6 @@
 # Git Commit Email Privacy in 5 Minutes:<br> <sub>automatic no-reply email, `useConfigOnly`, and conditional `includeIf`</sub>
 
-<!-- _**UPD:** The most up-to-date config version is now here: https://github.com/anydigital/git-commit-email-privacy_
-
---- -->
+<!--@reddit: _**UPD:** The most up-to-date config version is now here: https://github.com/anydigital/git-commit-email-privacy_ -->
 
 Exposing your commit email is easy; rewriting Git history is hard.
 
@@ -20,7 +18,9 @@ But there's a set-and-forget solution to ensure your Git privacy.
 
 You'll need the following configuration files. Replace all `PLACE_HOLDER` values with your actual information.
 
-<!-- _The most up-to-date config version is now here: https://github.com/anydigital/git-commit-email-privacy_ -->
+_**NOTE:** You have to split the `.gitconfig` into multiple files to avoid issues with `[includeIf]`, as explained in https://stackoverflow.com/a/74012889/5034198_
+
+<!--@reddit: _The most up-to-date config version is now here: https://github.com/anydigital/git-commit-email-privacy_ -->
 
 ### `.gitconfig`
 
@@ -99,9 +99,7 @@ Shouldn't this be the default configuration for every developer?
 
 ## Links
 
-https://www.reddit.com/r/git/comments/1pf94nt/how_to_avoid_exposing_your_commit_email_private/
-
-https://www.reddit.com/r/gitlab/comments/1pedw0w/setandforget_git_privacy_in_5_minutes_autoswitch/
+Open discussion: https://www.reddit.com/r/git/comments/1pf94nt/how_to_avoid_exposing_your_commit_email_private/
 
 ## Credits
 
@@ -109,6 +107,5 @@ https://stackoverflow.com/a/74012889/5034198
 
 ---
 
-_**UPD:** Had to split the `.gitconfig` into multiple files to avoid issues with `[includeIf]`, as explained in https://stackoverflow.com/a/74012889/5034198_
+_✨ if YOU found this useful — give a [star on GitHub](https://github.com/anydigital/git-commit-email-privacy) or simply [join TricksForGeeks on Reddit](https://www.reddit.com/r/TricksForGeeks/) for more ✨_
 
-_**UPD:** The most up-to-date config version is now here: https://github.com/anydigital/git-commit-email-privacy_
